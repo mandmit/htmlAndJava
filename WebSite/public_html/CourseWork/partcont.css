@@ -1,0 +1,47 @@
+.wraper {
+    margin: 100px 17% 15px 17%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 auto;
+}
+
+span {
+    font-weight: bold;
+}
+
+.footer {
+    flex-shrink: 1;
+}
+
+.wraper a {
+    text-decoration: none;
+    color: black;
+}
+
+.wraper a:hover {
+    color: white;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.fd {
+    width: 40%;
+    margin: auto;
+}
+
+.fd:hover {
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(99, 70, 50);
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.fd:last-child {
+    border: 1px solid black;
+}

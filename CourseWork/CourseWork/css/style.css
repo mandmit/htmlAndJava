@@ -1,0 +1,238 @@
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wraper {
+    display: flex;
+    margin: 100px 17% 20px 17%;
+    padding: 20px;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.smal-block1 {
+    padding: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.stores a,
+.genre a {
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+    word-wrap: normal;
+    color: black;
+}
+
+.smal-block1,
+.smal-block2 {
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.smal-block1:hover,
+.smal-block2:hover {
+    background-color: grey;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.stores a,
+.genre a {
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+
+.stores a:hover,
+.genre a:hover {
+    background-color: black;
+    color: white;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.stores {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.smal-block2 {
+    padding: 10px;
+    margin: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.genre {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.genre-image {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.car {
+    padding: 6px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.content {
+    width: 100%;
+}
+
+.cont {
+    padding: 20px;
+    display: flex;
+    border-top: 1px solid grey;
+    width: 100%;
+}
+
+.text {
+    padding: 10px;
+}
+
+span {
+    font-size: 24px;
+}
+
+.tovar {
+    position: relative;
+    display: flex;
+    color: black;
+    border-radius: 0;
+}
+
+.info {
+    display: none;
+    padding: 10px;
+    height: 200px;
+    z-index: 99;
+    background-color: lightgrey;
+    -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tovar:hover .info {
+    color: darkolivegreen;
+    display: block;
+    position: absolute;
+    border-radius: 20px;
+    left: 68%;
+    width: 300px;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.tovar {
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.tovar:hover {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.tovar:last-child {
+    border-radius: 0 0 20px 20px;
+}
+
+.aboutgenre {
+    position: absolute;
+    display: block;
+    width: 44%;
+    left: 54%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    height: 92%;
+    opacity: 70%;
+    color: white;
+    border-radius: 0 20px 0 0;
+}
+
+.tovcont {
+    display: flex;
+    overflow: hidden;
+}
+
+.item {
+    height: 350px;
+    flex: 20%;
+    transition: flex 300ms ease;
+    box-shadow: 0 0 19px 3px #000;
+    margin: 1px;
+}
+
+.item:hover {
+    flex: 2 2 400px;
+    background-size: 100% 100%;
+}
+
+#div1 {
+    display: none;
+}
+
+.system {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.system>input {
+    margin: 0 auto;
+    cursor: pointer;
+    width: 20%;
+}
+
+.about {
+    margin-top: 30px;
+}
+
+.listsys {
+    list-style-type: initial;
+    padding-left: 40px;
+    font-size: 15px;
+}
+
+#div1>h4 {
+    margin-top: 10px;
+    font-weight: 600;
+}

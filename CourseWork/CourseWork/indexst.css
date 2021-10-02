@@ -1,0 +1,694 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Goldman', cursive;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+}
+
+p {
+    margin: 10px;
+    padding: 30px;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header {
+    padding: 10px 20% 20px 20%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background: linear-gradient(to top, black, grey);
+    width: 100%;
+    opacity: 90%;
+}
+
+.header:hover {
+    opacity: 100%;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu__toggle {
+    flex-grow: 0;
+}
+
+.menu__btn {
+    flex-grow: 0;
+}
+
+.menu__box {
+    flex-grow: 3;
+}
+
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+.image {
+    border-radius: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.row3 {
+    color: blue;
+}
+
+.hovr a {
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+
+.hovr a:hover {
+    background-color: lightgreen;
+    color: black;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.row3 a:hover {
+    background-color: lightcoral;
+}
+
+.row2 a:hover {
+    background-color: lightblue;
+}
+
+.row4 a:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+li {
+    padding: 10px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 17% 20px 17%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.genres {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.news-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.prev {
+    transform: rotate(180deg);
+    margin-top: -100px;
+}
+
+.swiper-wrapper {
+    position: relative;
+    height: 650px;
+    display: flex;
+    border-radius: 40px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.news-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-col a{
+    border: 1px solid grey;
+    width: 40%;
+    margin: auto;
+}
+
+.img-slider,
+.video-slider {
+    width: 80%;
+    border-radius: 20px;
+    margin: 0 auto;
+    flex-grow: 2;
+}
+
+.news-col>h2 {
+    flex-grow: 0;
+}
+
+.news-col>p {
+    flex-grow: 1;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.nameofsite>h1 {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 26px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.red:after {
+    content: 'Якщо ви хочете відчути драйв та побувати на місці найкрутішого гонщика, тоді Вам сюди. Зробіть все що зможете аби дістатись фінішу найпершим.';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: lightsalmon;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.red:hover {
+    background-color: lightsalmon;
+}
+
+.yellow:after {
+    content: 'Побувати спортсменом в реальному житті тепер можливо кожному. Будьте футболістом, боксером, хокеїстом чи може баскетболістом, все в ваших руках';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: lightgoldenrodyellow;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.yellow:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.blue:after {
+    content: 'Стріляти та виміщувати злість. Часом хочеться це зробити в реальному житті, але є набагато легальніша альтернатива) Будьте солдатом якого заслужив весь світ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: lightblue;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.blue:hover {
+    background-color: lightblue;
+}
+
+.green:after {
+    content: 'Зробіть ідеальну версію самого себе. Прокачайте інтелект, силу, спритність або ж удачу. Тут це зробити набагато простіше.';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: lightgreen;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.green:hover {
+    background-color: lightgreen;
+}
+
+.grey:after {
+    content: 'Ставте світові рекорди в проходженнях цих ігор та змагайтеся зі своїми друзями на звання найспритніших рук в проходженні того чи іншого рівня. ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: lightgrey;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.grey:hover {
+    background-color: lightgray;
+}
+
+.brown:after {
+    content: 'Побувати в найнеймовірніших місцях, познайомитися з цікавими персонажами, на стати героєм своєї саги можна не відриваючись від екрану. Повірте...';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: burlywood;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.brown:hover {
+    background-color: burlywood;
+}
+
+.hvb:hover:after {
+    height: 65%;
+    opacity: 100%;
+}
+
+.hvb {
+    background-color: grey;
+    opacity: 80%;
+}
+
+.blockgan {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    margin: 5px;
+    width: 32%;
+}
+
+.blockgan {
+    font-size: 12px;
+}
+
+.blockgan h4 {
+    font-size: 20px;
+}
+
+.blockgan:hover {
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+}
+
+.icganr {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.icganr>img {
+    width: 45px;
+}
+
+.wrapper {
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to top, grey, black);
+    color: white;
+    font-size: 12px;
+    width: 100%;
+    opacity: 95%;
+}
+
+.footer h4 {
+    padding-bottom: 10px;
+}
+
+.footer:hover {
+    opacity: 100%;
+}
+
+.link {
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.links {
+    color: white;
+    padding: 4px;
+}
+
+.links1 {
+    color: black;
+}
+
+.links2 {
+    color: cornsilk;
+}
+
+.stores {
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.area {
+    background-color: black;
+    font-size: 40px;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+a .area:hover {
+    background-color: white;
+    color: black;
+}
+
+.col1 {
+    padding-top: 10px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.flexrow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.flexcol {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+/*For Adaptive*/
+
+
+@media (max-width: 1200px) {
+
+
+    .hamburger-menu {
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 99;
+    }
+
+    .menu__btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        left: 80%;
+        top: 3.5%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 100;
+        opacity: 100%;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #8b8b8b;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu__box {
+        display: block;
+        flex-wrap: wrap;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #393c3f;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle:checked~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked~.menu__box {
+        visibility: visible;
+        left: 0;
+    }
+
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        transition-duration: 0.25s;
+    }
+
+    .menu__box {
+        transition-duration: 0.25s;
+    }
+
+    .menu__item {
+        transition-duration: 0.25s;
+    }
+
+    body {
+        width: 100%;
+        background-image: none;
+    }
+
+    .block {
+        margin: 70px 0 0 0;
+        padding: 5px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .header {
+        position: fixed;
+        opacity: 40%;
+        z-index: 99;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .image {
+        flex: 1 1;
+    }
+
+    .nameofsite {
+        flex: 1 1;
+    }
+
+    .hamburger-menu {
+        flex: 1 1;
+    }
+
+    .stores {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .area {
+        margin-top: 5px;
+    }
+
+    .nameofsite>h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .about>h2 {
+        margin-top: 20px;
+    }
+
+    .video-slider {
+        height: 400px;
+    }
+
+    .header,
+    .footer {
+        width: 100%;
+        padding: 0;
+    }
+
+    .blockgan {
+        font-size: 10px;
+    }
+
+    .icganr>img {
+        width: 30px;
+    }
+
+    h4 {
+        font-size: 5px;
+    }
+
+    .footer h4:last-child {
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin-top: 5px;
+        padding-top: 5px;
+    }
+
+    .col1,
+    .col2,
+    .col3 {
+        padding: 0;
+    }
+
+}
+
+@media(max-width: 319px) {
+    .video-slider {
+        height: 120px;
+    }
+
+    .blockgan {
+        font-size: 10px;
+    }
+
+    .blockgan h4 {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .about>h2 {
+        margin-top: 20px;
+    }
+
+    .area {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .video-slider {
+        height: 300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .video-slider {
+        height: 500px;
+    }
+}

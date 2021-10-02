@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Manilo main</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div th:switch="${students}">
+            <h2 th:case="null">No users yet!</h2>
+            <div th:case="*" >
+                <h2>Available Users</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="student : ${students}">
+                            <td th:text="${student.name}"></td>
+                            <td th:text="${student.age}"></td>
+                            <td 
+
+                                ><form action="./update" method="post">
+                                    <input type="hidden" name="url" th:value="${student.getHref()}">
+                                    <input type="text" name="name" th:value="${student.name}"/>
+                                    <input type="text" name="age" th:value="${student.age}"/>
+                                    <button type="submit"><span>update</span></button> 
+
+                                </form> </td>
+                            <td 
+
+                                ><form action="./del" method="post">
+                                    <input type="hidden" name="url" th:value="${student.getHref()}">
+                                    <button type="submit"><span>del</span></button> 
+
+                                </form> </td>
+                    <p ></p>
+                    <p ></p>
+                    <p ></p>
+
+                    </tr>
+                    <tr>
+                    <form action="./post" method="post">
+                        <td><input type="text" name="name" /></td> 
+                        <td><input type="text" name="age" /></td> 
+                        <td><button type="submit"><span>post</span></button> </td> 
+                    </form> 
+                    </tr>
+                    </tbody>
+                </table>
+            </div>  
+            <form action="./getMessage">
+                <button  type="submit"><span>Refresh</span></button> 
+            </form>
+
+        </div>
+    </body>
+</html>

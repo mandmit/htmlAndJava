@@ -1,0 +1,209 @@
+@media(min-width: 768px) and (max-width: 1200px) {
+    body {
+        background-image: none;
+    }
+
+    .wraper {
+        margin: 0;
+        margin-top: 50px;
+        flex: 1 0 auto;
+        width: 100%;
+    }
+
+    .swiper-slide img {
+        border-radius: 20px;
+    }
+
+    .left-column {
+        display: none;
+    }
+
+    .right-column {
+        width: 100%;
+    }
+    
+    .aboutgenre > p{
+        font-size: 20px;
+    }
+
+    .footer {
+        flex-shrink: 0;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 767px) {
+    body {
+        background-image: none;
+    }
+    
+    .cont{
+        display: flex;
+    }
+
+    .imgcont{
+        width: 50%;
+        flex: 1 0 auto;
+    }
+    
+    .imgcont>img{
+        width: 100%;
+    }
+    
+    .text{
+        width: 50%;
+        flex: 1 0 auto;
+    }
+    
+    .wraper {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+        flex: 1 0 auto;
+    }
+
+    .genre-image {
+        width: 100%;
+    }
+
+    .left-column {
+        display: none;
+    }
+
+    .right-column {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .text {
+        font-size: 10px;
+    }
+
+    .text span {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    .aboutgenre > p{
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+    
+    .footer {
+        flex-shrink: 0;
+        text-align: center;
+    }
+
+    .footer h4 {
+        font-size: 6px;
+    }
+
+    .item {
+        flex: 0%;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 500px){
+    .aboutgenre > p{
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 319px) {
+    body {
+        background-image: none;
+        width: 100%;
+    }
+
+    .wraper {
+        margin: 50px 0 0 0;
+        padding: 0;
+        flex: 1 0 auto;
+        width: 100%;
+    }
+
+    .swiper-container {
+        display: none;
+    }
+    
+    .aboutgenre > p{
+        padding: 0;
+        margin: 0;
+        font-size: 6px;
+    }
+    
+    .cont{
+        display: flex;
+    }
+
+    .imgcont{
+        width: 50%;
+        flex: 1 0 auto;
+    }
+    
+    .imgcont>img{
+        width: 100%;
+    }
+    
+    .text{
+        font-size: 10px;
+        width: 50%;
+        flex: 1 0 auto;
+    }
+    
+    span {
+        font-size: 12px;
+    }
+
+    .left-column {
+        display: none;
+    }
+
+    .right-column {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    h4 {
+        font-size: 8px;
+    }
+    
+    .footer {
+        flex-shrink: 0;
+    }
+
+    .footer h4 {
+        font-size: 4px;
+    }
+
+    .item {
+        flex: 0%;
+    }
+}
